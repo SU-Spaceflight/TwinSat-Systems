@@ -1,3 +1,3 @@
-package ProvideInfoFunctions {
+package ProvideInfoActions {
     action def ProvideInfoAboutObject{}
 }
