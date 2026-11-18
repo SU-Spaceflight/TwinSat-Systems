@@ -3,5 +3,4 @@ package KeepSatOpsActions {
         action supplyPower;
         action keepSatelliteWithinThermalOpsLimits;
     }
-
 }

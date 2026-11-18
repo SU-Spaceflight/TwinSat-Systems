@@ -1,6 +1,7 @@
 package Level0Parts {
     private import Level0Actions::*; 
     part def SpySat {
+        doc /* Level 0 satellite object */
         part payload;
         part eps;
         part tcs;

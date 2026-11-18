@@ -6,6 +6,7 @@ package Level0Actions {
     private import structuralActions::*;
 
     action def Mission{
+        doc /* Level 0 mission action */
         action provide_info : ProvideInfoAboutObject;
         action keep_sat_op : KeepSatelliteOperational;
         action manouver : Manouver;
