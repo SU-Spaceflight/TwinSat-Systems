@@ -12,7 +12,7 @@ package KeepSatOpsActions {
         action getpowertocomponents : getpowertocomponents ;
         action maintainReliabilityAndSafety :maintainReliabilityAndSafety  ;
 
-    };
+    }
        
 
     action def supplyPower {
@@ -21,10 +21,23 @@ package KeepSatOpsActions {
     }
     
     action def generatePower{
+        action takeInEnergyFromEnvironment;
+        action ConvertCollectedEnergyIntoElectricalEnergy;
     }
     action def getpowertocomponents{
-        action distiributionsystem ;
-        action powertransmissionandregulation;
+        action distributionsystem ;
+        action powerTransmissionAndRegulation;
+    }
+    action def distributionSystem {
+        action subSystemIsolation;
+        action ableToHandleLoads;
+            
+        }
+    }
+    action def powerTransmissionAndRegulation{
+        action voltageRegulation;
+        action currentRegulation;
+
     }
 
     action def providepowertobus  {
@@ -45,4 +58,4 @@ package KeepSatOpsActions {
     }
     
 
- }
+ 
